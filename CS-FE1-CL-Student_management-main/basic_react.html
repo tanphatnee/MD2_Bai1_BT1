@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Basic React Lab</title>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-lg-7 grid-margin stretch-card">
+        <div class="card">
+          <!-- START CONTROL -->
+          <div class="card-header">
+            <div class="row">
+              <div class="col-3">
+                <button type="button" class="btn btn-primary btn-icon-text">
+                  Thêm mới sinh viên
+                </button>
+              </div>
+              <div class="col-6">
+                <form class="search-form" action="#">
+                  <i class="icon-search"></i>
+                  <input
+                    type="search"
+                    class="form-control"
+                    placeholder="Search Here"
+                    title="Search here"
+                  />
+                  <button class="btn btn-primary btn-icon-text">
+                    Tìm kiếm
+                  </button>
+                </form>
+              </div>
+              <div class="col-3 d-flex align-items-center">
+                <select class="form-control">
+                  <option value="">Sắp xếp</option>
+                  <option value="">ABC def</option>
+                  <option value="">ABC def</option>
+                  <option value="">ABC def</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- END CONTROL -->
+          <!-- START LIST STUDENT -->
+          <div class="card-body">
+            <h3 class="card-title">Danh sách sinh viên</h3>
+            <div class="table-responsive pt-3">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Mã sinh viên</th>
+                    <th>Tên sinh viên</th>
+                    <th>Tuổi</th>
+                    <th>Giới tính</th>
+                    <th>Hành động</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>SV001</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>20</td>
+                    <td>Nam</td>
+                    <td>
+                      <div class="template-demo">
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-icon-text"
+                        >
+                          Xem
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-warning btn-icon-text"
+                        >
+                          Sửa
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-icon-text"
+                        >
+                          Xóa
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>SV002</td>
+                    <td>Nguyễn Văn B</td>
+                    <td>21</td>
+                    <td>Nữ</td>
+                    <td>
+                      <div class="template-demo">
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-icon-text"
+                        >
+                          Xem
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-warning btn-icon-text"
+                        >
+                          Sửa
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-icon-text"
+                        >
+                          Xóa
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>SV003</td>
+                    <td>Nguyễn Văn C</td>
+                    <td>19</td>
+                    <td>Nam</td>
+                    <td>
+                      <div class="template-demo">
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-icon-text"
+                        >
+                          Xem
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-warning btn-icon-text"
+                        >
+                          Sửa
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-icon-text"
+                        >
+                          Xóa
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- END LIST STUDENT -->
+        </div>
+      </div>
+      <!-- START FORM SINH VIEN -->
+      <div class="col-5 grid-margin">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Thông tin sinh viên</h3>
+            <form class="form-sample">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Mã sinh viên</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Tên sinh viên</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Tuổi</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Giới tính</label>
+                <div class="col-sm-9">
+                  <select class="form-control">
+                    <option>Nam</option>
+                    <option>Nữ</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Ngày sinh</label>
+                <div class="col-sm-9">
+                  <input class="form-control" placeholder="dd/mm/yyyy" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Nơi sinh</label>
+                <div class="col-sm-9">
+                  <select class="form-control">
+                    <option>Hà Nội</option>
+                    <option>TP. Hồ Chí Minh</option>
+                    <option>Đà Nẵng</option>
+                    <option>Quảng Ninh</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Địa chỉ</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary me-2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- END FORM SINH VIÊN -->
+    </div>
+  </body>
+</html>
